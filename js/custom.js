@@ -33,20 +33,3 @@ $(".owl-carousel").owlCarousel({
 
 /** google_map js **/
 
-function GetMap() {
-        var map = new Microsoft.Maps.Map('#myMap', {
-            credentials: 'AqjzA1ScbGQh0ZzaREiK6W_H6fetyu7XZ-37oUDErwDT0P0AnCLwlgbJ0KByboh0',
-            center: new Microsoft.Maps.Location(37.084326, 15.278324)
-        });
-
-        var center = map.getCenter();
-
-        //Create custom Pushpin
-        var pin = new Microsoft.Maps.Pushpin(center, {
-            title: 'Sede',
-            text: ''
-        });
-
-        //Add the pushpin to the map
-        map.entities.push(pin);
-    }
