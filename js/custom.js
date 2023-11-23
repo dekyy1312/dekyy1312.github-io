@@ -12,17 +12,17 @@ document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.value = 'Invio...';
+   btn.value = 'Sending...';
 
-   const serviceID = 'contact_service';
+   const serviceID = 'default_service';
    const templateID = 'template_c63p4jn';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Invia';
-      alert('Inviato!');
+      btn.value = 'Send Email';
+      alert('Sent!');
     }, (err) => {
-      btn.value = 'Invia';
+      btn.value = 'Send Email';
       alert(JSON.stringify(err));
     });
 });
