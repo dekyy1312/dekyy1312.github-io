@@ -19,10 +19,10 @@ document.getElementById('form')
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Send Email';
+      btn.value = 'Invia';
       alert('Inviato!');
     }, (err) => {
-      btn.value = 'Send Email';
+      btn.value = 'Invia';
       alert(JSON.stringify(err));
     });
 });
