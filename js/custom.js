@@ -6,6 +6,27 @@ function getCurrentYear() {
 }
 getCurrentYear()
 
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Invio...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_c63p4jn';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Inviato!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+
 //client section owl carousel
 $(".owl-carousel").owlCarousel({
     loop: true,
