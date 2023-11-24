@@ -286,24 +286,29 @@
       </div>
       <div class="row">
         <div class="col-md-6">
-          <form id="form">
+          <form action="https://formsubmit.co/riccioliimpianti@gmail.com" method="POST">
             <div>
-              <label for="from_name" style="height:0%;"></label>
-              <input  type="text" placeholder="Nome completo" name="from_name" required/>
+              <input  type="text" placeholder="Inserici il tuo nome completo" name="Nome" required/>
             </div>
             <div>
-              <input type="text" placeholder="Numero di telefono" name="Numero-di-telefono" required/>
+              <input type="tel" placeholder="Inserisci il tuo numero di telefono" name="Numero-di-telefono" required/>
             </div>
             <div>
-              <label for="reply-to" style="height:0%;"></label>
-              <input type="email" placeholder="Email" name="reply-to" required/>
+              <input type="email" placeholder="Inserisci la tua Email" name="Email" required/>
             </div>
             <div>
-              <label for="message" style="height:0%;"></label>
-              <input type="text" class="message-box" placeholder="Messaggio" name="message" required/>
+              <input type="text" class="message-box" placeholder="Inserici il tuo messaggio" name="Messaggio" required/>
+            </div>
+            <div>
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="riccioliimpianti.it">
+              <input type="hidden" name="_subject" value="Nuova email dal sito">
+              <input type="hidden" name="_template" value="table">
             </div>
             <div class="d-flex ">
-                <input type="submit" id="button" value="Invia" >
+              <button type="submit">
+                INVIA
+              </button>
             </div>
           </form>
         </div>
